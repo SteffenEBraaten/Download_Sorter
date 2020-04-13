@@ -12,3 +12,5 @@ To run the program simply write the following:
 ```bash
  python3 download_sorter.py
  ```
+## Demo
+![](https://github.com/SteffenEBraaten/Download_Sorter/blob/master/Images/download_sorter_demo.gif)
