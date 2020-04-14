@@ -11,7 +11,7 @@ def read_file(file):
     Reads the extensions in the file and loads them into the extensions dictionary. 
     
     If the file format is not correct an exception will be thrown and the program
-    will be terminate.
+    will be terminatet.
     """
     
     try:
@@ -34,10 +34,10 @@ def sort_files():
     Sorting the files in the selected folder based on the extensions which is
     loaded from the file read in read_file(file). 
     
-    If the fiel extension matches one of the extentions it will be moved to 
+    If the file extension matches one of the extentions it will be moved to 
     the folder that the extension relates to.
 
-    However if the extension does not match any of our extensions it will
+    However, if the extension does not match any of our extensions it will
     be placed in the "Other" folder.
     """
 
@@ -65,5 +65,5 @@ def __move_file(source, destination):
 def main():
     read_file(filepath)
     sort_files()
-    
+
 main()
