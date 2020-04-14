@@ -4,7 +4,7 @@ Compressed .7z .cbr .deb .gz .pkg .rar .rpm .sitx .tar.gz .zip .zipx
 Data .csv .dat .ged .key .keychain .pps .sdf .tar .xml 
 Documents .doc .docx .log .msg .pdf .odt .pages .rtf .tex .txt .wpd .wps 
 Executeables .apk .app .bat .cgi .com .dmg .exe .gadget .jar .wsf 
-Pictures .bmp .dds .gif .HEIC .jpg .png .psd .pspimage .tga .thm .tif .tiff .yuv
+Pictures .bmp .dds .gif .heic .jpg .jpeg .png .psd .pspimage .tga .thm .tif .tiff .yuv
 Presentations .ppt .pptx
 Vector .ai .eps .svg 
 Videos .3g2 .3gp .asf .avi .flv .m4v .mov .mp4 .mpg .rm .srt .swf .vob .wmv
