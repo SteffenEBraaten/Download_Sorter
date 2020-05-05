@@ -11,7 +11,7 @@ def read_file(file):
     Reads the extensions in the file and loads them into the extensions dictionary. 
     
     If the file format is not correct an exception will be thrown and the program
-    will be terminatet.
+    will be terminated.
     """
     
     try:
@@ -37,8 +37,8 @@ def sort_files():
     If the file extension matches one of the extentions it will be moved to 
     the folder that the extension relates to.
 
-    However, if the extension does not match any of our extensions it will
-    be placed in the "Other" folder.
+    However, if the extension of the file does not match any of our defined 
+    extensions it will be placed in the "Other" folder.
     """
 
     print('Sorting started...')
