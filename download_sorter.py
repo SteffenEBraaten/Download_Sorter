@@ -9,7 +9,7 @@ exstensions = {}
 
 def read_file(file):
     """
-    Reads the extensions in the file and loads them into the extensions dictionary. 
+    Reads the extensions in the file and loads them into the extensions dictionary.
 
     If the file format is not correct an exception will be thrown and the program
     will be terminated.
@@ -32,15 +32,15 @@ def read_file(file):
 def sort_files():
     """
     Sorting the files in the selected folder based on the extensions which is
-    loaded from the file read in read_file(file). 
+    loaded from the file read in read_file(file).
 
-    If the file extension matches one of the extentions it will be moved to 
+    If the file extension matches one of the extentions it will be moved to
     the folder that the extension relates to.
 
-    However, if the extension of the file does not match any of our defined 
+    However, if the extension of the file does not match any of our defined
     extensions it will be placed in the "Other" folder.
     """
-    
+
     print('Sorting started...')
     for file in os.listdir(folder_to_sort):
         source = '{}/{}'.format(folder_to_sort, file)
@@ -52,12 +52,12 @@ def sort_files():
 
 def __sort_file(source, file):
     for key in exstensions:
-        for value in exstensions[key]:
-            if file.lower().endswith(value):
-                __make_folder(key)
-                destination = '{}/{}/{}'.format(folder_to_sort, key, file)
-                __move_file(source, destination)
-                return True
+        file_extension = os.path.splitext(file)[-1].lower()
+        if (file_extension in exstensions.get(key)):
+            __make_folder(key)
+            destination = '{}/{}/{}'.format(folder_to_sort, key, file)
+            __move_file(source, destination)
+            return True
     return False
 
 
